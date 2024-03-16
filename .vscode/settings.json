@@ -1,0 +1,7 @@
+{
+    "python.testing.pytestArgs": [
+        "mnemonica.egg-info"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}

@@ -1,0 +1,41 @@
+[build-system]
+requires = [
+    "setuptools>=60",
+    "setuptools-scm>=8.0"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mnemonica"
+dependencies = []
+requires-python = ">=3.10"
+authors = [
+  {name = "Maximilian Schmidt", email = "saggitar@themenwhostareat.codes"},
+]
+maintainers = [
+  {name = "Maximilian Schmidt", email = "saggitar@themenwhostareat.codes"},
+]
+description = "A CLI app to memorize card stacks"
+readme = "README.md"
+license = {file = "LICENSE.txt"}
+keywords = ["magic", "cards", "mnemonics"]
+classifiers = [
+  "Programming Language :: Python"
+]
+dynamic = ["version"]
+
+
+[project.optional-dependencies]
+dev = ["build"]
+
+[project.urls]
+Homepage = "https://themenwhostareat.codes"
+Documentation = "https://readthedocs.org"
+Repository = "https://github.com/saggitar/mnemonica-py"
+"Bug Tracker" = "https://github.com/saggitar/mnemonica-py/issues"
+Changelog = "https://github.com/saggitar/mnemonica-py/blob/master/CHANGELOG.md"
+
+[project.scripts]
+mnemonica = "mnemonica:main_cli"
+
+[tool.setuptools_scm]
